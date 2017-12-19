@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reservation Page</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="jumbotron">
+			<h1 class="text-center"> FriendFinder &copy; </h1>
+			<hr>
+			<h2 class="text-center">Fill out the form to find your match</h2>
+			<br>
+
+			<div class="text-center">
+				<a href="/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+
+				<!-- Reservation Page -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">Compatibility Survey</h4>
+					</div>
+					<div class="panel-body">
+
+						<form role="form">
+							<div>
+								<label class="col-form-label" for="user_name">Your Name:</label>
+								<input type="text" id="user_name" class="form-control" style="margin-bottom: 20px" required>
+							</div>
+							<div>
+								<label class="col-form-label" for="user_photo">Image</label>
+								<input type="text" id="user_photo" class="form-control" style="margin-bottom: 20px" required>
+							</div>
+							<hr>
+							<div>
+								<label class="col-form-label" for="question1">1) Your mind is always buzzing with unexplored ideas and plans.</label>
+								<select class="form-control" id="question1" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question2">2) Generally speaking, you rely more on your experience than your imagination.</label>
+								<select class="form-control" id="question2" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question3">3) You find it easy to stay relaxed and focused even when there is some pressure.</label>
+								<select class="form-control" id="question3" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question4">4) You rarely do something just out of sheer curiosity.</label>
+								<select class="form-control" id="question4" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question5">5) People can rarely upset you.</label>
+								<select class="form-control" id="question5" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question6">6) It is often difficult for you to relate to other people’s feelings.</label>
+								<select class="form-control" id="question6" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question7">7) In a discussion, truth should be more important than people’s sensitivities.</label>
+								<select class="form-control" id="question7" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question8">8) You rarely get carried away by fantasies and ideas.</label>
+								<select class="form-control" id="question8" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question9">9) You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+								<select class="form-control" id="question9" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+							<div>
+								<label class="col-form-label" for="question10">10) You feel more energetic after spending time with a group of people.</label>
+								<select class="form-control" id="question10" style="margin-bottom: 20px" required>
+									<option value></option>
+									<option value="1">1 (Strongly Disagree)</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (Strongrly Agree)</option>
+								</select>
+							</div>
+
+							<button type="submit" class="btn btn-primary submit">Submit</button>
+						</form>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<div id="results-modal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2 class="modal-title"><strong>Best Match</strong></h2>
+					</div>
+					<div class="modal-body">
+						<h2 id="match-name"></h2>
+						<img id="match-img" src="" alt="An image should appear here" style="max-width: 150px">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	    <footer class="footer">
+	     	<div class="container">
+				<p><a href="/api/friends">API Friends Data</a></p>
+	     	</div>
+	    </footer>
+
+	</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+	$(".submit").on("click", function(event){
+		event.preventDefault();
+
+		function validateForm() {
+			var isValid = true;
+			$(".form-control").each(function() {
+				if ($(this).val() === "") {
+					isValid = false;
+				}
+			});
+			return isValid;
+		}
+
+		if (validateForm()) {
+			var newSubmission = {
+				name: $('#user_name').val().trim(),
+				photo: $('#user_photo').val().trim(),
+				scores: [
+					parseInt($('#question1').val().trim()),
+					parseInt($('#question2').val().trim()),
+					parseInt($('#question3').val().trim()),
+					parseInt($('#question4').val().trim()),
+					parseInt($('#question5').val().trim()),
+					parseInt($('#question6').val().trim()),
+					parseInt($('#question7').val().trim()),
+					parseInt($('#question8').val().trim()),
+					parseInt($('#question9').val().trim()),
+					parseInt($('#question10').val().trim())
+					]
+			};
+
+			var currentURL = window.location.origin;
+
+			$.get("/api/friends/", function(data) {
+				var bestIndex;
+				var bestTotal = 100;
+				var currentTotal;
+				for (var i = 0; i < data.length; i++) {
+					var otherUserScores = data[i].scores;
+					currentTotal = 0;
+					for (var j = 0; j < otherUserScores.length; j++) {
+						currentTotal += Math.abs(newSubmission.scores[j] - parseInt(otherUserScores[j]));
+					};
+					if (currentTotal < bestTotal) {
+						bestIndex = i;
+						bestTotal = currentTotal;
+					};
+				};
+				$("#match-name").text(data[bestIndex].name);
+				$("#match-img").attr("src", data[bestIndex].photo);
+				$("#results-modal").modal("toggle");
+			});
+
+		    $.post(currentURL + "/api/friends", newSubmission,
+		    function(data) {
+
+		    	// Clear the form when submitting
+	    		$('#user_name').val("");
+				$('#user_photo').val("");
+				$('#question1').val("");
+				$('#question2').val("");
+				$('#question3').val("");
+				$('#question4').val("");
+				$('#question5').val("");
+				$('#question6').val("");
+				$('#question7').val("");
+				$('#question8').val("");
+				$('#question9').val("");
+				$('#question10').val("");
+		    });
+		}
+		else {
+			alert("Please Fill In Each Field");
+		};
+	});
+</script>
