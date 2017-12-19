@@ -189,7 +189,7 @@
 
 	    <footer class="footer">
 	     	<div class="container">
-				<p><a href="/api/friends">API Friends Data</a> | <a href="/api/reset">Reset Friends Data</a></p>
+				<p><a href="/api/friends">API Friends Data</a> | <a id="reset">Reset Friends Data</a></p>
 	     	</div>
 	    </footer>
 
@@ -200,6 +200,12 @@
 
 
 <script type="text/javascript">
+	//when reset is clicked...
+	$("#reset").on("click", function(event){
+		$.post("/api/reset", function(data) {
+			alert("Data Reset");
+		});
+	};
 
 	$(".submit").on("click", function(event){
 		event.preventDefault();
