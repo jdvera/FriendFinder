@@ -200,12 +200,12 @@
 
 
 <script type="text/javascript">
-	//when reset is clicked...
 	$("#reset").on("click", function(event){
+		event.preventDefault();
 		$.post("/api/reset", function(data) {
 			alert("Data Reset");
 		});
-	};
+	});
 
 	$(".submit").on("click", function(event){
 		event.preventDefault();
